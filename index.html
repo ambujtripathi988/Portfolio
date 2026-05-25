@@ -2,12 +2,12 @@
 <html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
-  <title>Ambuj Tripathi — IAM Engineer</title>
+  <title>Ambuj Tripathi — Cybersecurity IAM Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ambuj Tripathi - IAM Engineer at Cognizant | Oracle OIM, OAM, OID | SAML, OAuth 2.0 | SSO | Identity Lifecycle Management">
+  <meta name="description" content="Ambuj Tripathi - Oracle OIM, OAM, OID | SAML, OAuth 2.0 | SSO | Identity Lifecycle Management">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     /* ===== CSS Variables ===== */
@@ -56,10 +56,11 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.7;
+      font-size: 15px;
       transition: background 0.3s, color 0.3s;
     }
 
@@ -110,7 +111,7 @@
       transform: translateX(-50%);
       background: var(--accent);
       color: #fff;
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: 0.65rem;
       font-weight: 700;
       letter-spacing: 0.12em;
@@ -118,14 +119,48 @@
       padding: 4px 14px;
       white-space: nowrap;
     }
+    
+    /* Download Resume Button */
+	.btn-resume {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 0.65rem 1rem;
+	border-radius: 4px;
+	background: var(--accent);
+	color: #fff;
+	font-family: 'Outfit', sans-serif;
+	font-weight: 700;
+	font-size: 0.8rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: var(--transition);
+	margin-top: 1rem;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	}
+
+	.btn-resume:hover {
+	background: var(--accent2);
+	transform: translateY(-1px);
+	box-shadow: var(--shadow);
+	}
+
+	.btn-resume i {
+	font-size: 0.85rem;
+	}
 
     .sidebar-name {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-weight: 800;
-      font-size: 1.45rem;
+      font-size: 1.35rem;
       color: var(--text);
       margin-top: 1.5rem;
       line-height: 1.2;
+      text-align: center;
     }
     .sidebar-title {
       font-size: 0.82rem;
@@ -133,6 +168,7 @@
       font-weight: 500;
       margin-top: 0.35rem;
       letter-spacing: 0.02em;
+      text-align: center;
     }
 
     .sidebar-divider {
@@ -201,14 +237,61 @@
       display: flex; align-items: center; justify-content: center; gap: 0.5rem;
       padding: 0.65rem; border-radius: 3px;
       background: var(--accent); color: #fff;
-      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-family: 'Outfit', sans-serif; font-weight: 700;
       font-size: 0.8rem; letter-spacing: 0.05em;
       text-transform: uppercase; text-decoration: none;
       transition: var(--transition);
     }
     .btn-download:hover { background: var(--accent2); }
 
-    /* Theme Toggle — fixed top-right */
+ /* Download Resume Button */
+.btn-resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.42rem 0.9rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: var(--transition);
+  margin: 0.75rem auto 0;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.btn-resume:hover {
+  background: var(--accent2);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.btn-resume i {
+  font-size: 0.68rem;
+}
+
+    /* Footer */
+    .site-footer {
+      background: var(--panel);
+      border-top: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text3);
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .site-footer a { color: var(--accent); text-decoration: none; }
+    .site-footer a:hover { text-decoration: underline; }
+
+        /* Theme Toggle — fixed top-right */
     .theme-toggle {
       position: fixed;
       top: 1rem;
@@ -265,7 +348,7 @@
       margin-bottom: 2rem;
     }
     .section-label {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: 0.65rem;
       font-weight: 700;
       letter-spacing: 0.18em;
@@ -275,22 +358,23 @@
     }
     .section-line { flex: 1; height: 1px; background: var(--border); }
     .section-title {
-      font-family: 'Syne', sans-serif;
-      font-size: 2rem;
-      font-weight: 800;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.45rem;
+      font-weight: 700;
       color: var(--text);
       margin-bottom: 0.5rem;
-      line-height: 1.15;
+      line-height: 1.2;
     }
 
     /* ===== About ===== */
     .about-lead {
-      font-size: 1.05rem;
-      color: var(--text2);
-      max-width: 680px;
-      margin-bottom: 2rem;
-      line-height: 1.8;
-    }
+  font-size: 0.92rem;
+  color: var(--text2);
+  width: 100%;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  text-align: justify;
+}
 
     .stats-row {
       display: grid;
@@ -309,7 +393,7 @@
       transition: background 0.3s;
     }
     .stat-num {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: 2.2rem;
       font-weight: 800;
       color: var(--accent);
@@ -320,7 +404,7 @@
     /* ===== Skills ===== */
     .skill-group { margin-bottom: 1.75rem; }
     .skill-group-name {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: 0.72rem;
       font-weight: 700;
       letter-spacing: 0.12em;
@@ -344,12 +428,7 @@
       transition: var(--transition);
     }
     .tag:hover { border-color: var(--accent-border); background: var(--accent-bg); color: var(--accent); }
-    .tag.highlight {
-      background: var(--accent-bg);
-      color: var(--accent);
-      border-color: var(--accent-border);
-      font-weight: 600;
-    }
+    /* .tag.highlight removed — all tags uniform */
 
     /* ===== Experience ===== */
     .exp-item {
@@ -385,7 +464,7 @@
     .exp-content { flex: 1; min-width: 0; }
     .exp-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.35rem; }
     .exp-role {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-weight: 700;
       font-size: 1rem;
       color: var(--text);
@@ -406,10 +485,10 @@
     }
     .exp-bullets { padding-left: 1.1rem; }
     .exp-bullets li {
-      font-size: 0.85rem;
+      font-size: 0.92rem;
       color: var(--text2);
       margin-bottom: 0.4rem;
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     /* ===== Education ===== */
@@ -434,7 +513,7 @@
       flex-shrink: 0;
     }
     .edu-degree {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-weight: 700; font-size: 0.95rem;
       color: var(--text);
     }
@@ -468,7 +547,7 @@
       flex-shrink: 0;
     }
     .cert-name {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: 0.88rem;
       font-weight: 700;
       color: var(--text);
@@ -512,7 +591,7 @@
       font-size: 1.4rem;
     }
     .profile-name {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-weight: 700; font-size: 0.88rem;
       color: var(--text);
     }
@@ -544,7 +623,7 @@
       flex-shrink: 0;
     }
     .pub-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-weight: 700;
       font-size: 1rem;
       color: var(--text);
@@ -615,6 +694,7 @@
       color: var(--text3);
       margin-top: 0.2rem;
       min-height: 1.3em;
+      text-align: center;
     }
     .typed-cursor { color: var(--accent); animation: blink 1s infinite; }
     @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
@@ -652,22 +732,35 @@
     }
 
     /* Contact section */
-    .contact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
-    .contact-item {
+
+    /* Contact Simple */
+    .contact-simple { max-width: 620px; }
+    .contact-intro {
+      font-size: 0.92rem;
+      color: var(--text2);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+    .contact-links { display: flex; flex-direction: column; gap: 0.65rem; }
+    .contact-link-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.7rem 1.25rem;
+      border-radius: 4px;
       background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 1.25rem;
-      display: flex; align-items: center; gap: 1rem;
+      color: var(--text);
+      font-size: 0.88rem;
+      font-weight: 500;
       text-decoration: none;
       transition: var(--transition);
+      width: fit-content;
     }
-    .contact-item:hover { border-color: var(--accent); box-shadow: var(--shadow); }
-    .contact-item i { font-size: 1.25rem; color: var(--accent); width: 24px; }
-    .contact-label { font-size: 0.72rem; color: var(--text3); text-transform: uppercase; letter-spacing: 0.08em; }
-    .contact-val { font-size: 0.88rem; color: var(--text); font-weight: 500; margin-top: 0.15rem; }
+    .contact-link-pill i { color: var(--accent); font-size: 0.9rem; }
+    .contact-link-pill:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
 
-    /* Scrollbar */
+        /* Scrollbar */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
@@ -686,19 +779,25 @@
     <div class="sidebar-inner">
       <div class="photo-wrap">
         <img id="portrait" src="" alt="Ambuj Tripathi">
-        <div class="photo-badge">IAM Engineer</div>
+        <div class="photo-badge">Cybersecurity — IAM Engineer</div>
       </div>
 
-      <h1 class="sidebar-name">Ambuj<br>Tripathi</h1>
-      <div class="sidebar-title">Oracle OIM · OAM · OID · SSO</div>
+      <h1 class="sidebar-name">Ambuj Tripathi</h1>
       <div class="typed-wrap"><span id="typed"></span><span class="typed-cursor">|</span></div>
+      
+      <!-- Resume Download Button Added -->
+	<a href="https://drive.google.com/file/d/1g65DuYPw2oTD50oYKzOjVO-lxTwx3lYy/view?usp=sharing" 
+	   target="_blank" 
+	   class="btn-resume">
+	  <i class="fas fa-download"></i> Download Resume
+	</a>
 
       <div class="sidebar-divider"></div>
+      
+      
 
       <div class="sidebar-info">
         <div class="info-row"><i class="fas fa-map-marker-alt"></i><span>Mumbai, Maharashtra, India</span></div>
-        <div class="info-row"><i class="fas fa-envelope"></i><a href="mailto:acc.ambujtripathi@gmail.com">acc.ambujtripathi@gmail.com</a></div>
-        <div class="info-row"><i class="fas fa-phone"></i><a href="tel:+919889688939">+91 98896 88939</a></div>
         <div class="info-row"><i class="fas fa-building"></i><span>Cognizant Technology Solutions</span></div>
         <div class="info-row"><i class="fas fa-graduation-cap"></i><span>B.Tech (IT) · ABES Engineering (2020–24)</span></div>
       </div>
@@ -716,16 +815,10 @@
       </nav>
 
       <div class="sidebar-socials">
-        <a href="https://linkedin.com/in/ambujtripathise" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/ambujtripathi988" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://leetcode.com/ambuj_tripathi" target="_blank" class="social-btn"><i class="fas fa-code"></i> LeetCode</a>
-        <a href="https://www.hackerrank.com/IT_3A_20B0131111" target="_blank" class="social-btn"><i class="fab fa-hackerrank"></i> HackerRank</a>
       </div>
     </div>
 
-    <div class="sidebar-bottom">
-      <a href="#contact" class="btn-download"><i class="fas fa-paper-plane"></i>&nbsp; Contact Me</a>
-    </div>
+
   </aside>
 
   <!-- ===== MAIN ===== -->
@@ -739,7 +832,7 @@
       </div>
       <h2 class="section-title">About Me</h2>
       <p class="about-lead">
-        I'm an <strong>IAM Engineer at Cognizant Technology Solutions</strong> with hands-on experience in Oracle IAM stack — OIM, OAM, OID, OHS — specializing in L2 support, identity lifecycle management (JML), and troubleshooting authentication and access issues. I work on SSO-related problems, user provisioning, role-based access control (RBAC), and ITSM ticket resolution in 24×7 enterprise environments.
+        I'm an <strong>Cybersecurity — IAM Engineer at Cognizant Technology Solutions</strong> with hands-on experience in Oracle IAM stack — OIM, OAM, OID, OHS — specializing in L2 support, identity lifecycle management (JML), and troubleshooting authentication and access issues. I work on SSO-related problems, user provisioning, role-based access control (RBAC), and ITSM ticket resolution in 24×7 enterprise environments.
       </p>
       <p class="about-lead">
         I bring a strong foundation in AWS and backend development through REST APIs using Lambda, API Gateway, and DynamoDB. Passionate about problem-solving with <strong>500+ DSA problems</strong> solved and a 5-star rating on HackerRank.
@@ -772,11 +865,11 @@
       <div class="skill-group">
         <div class="skill-group-name">IAM & Access Management</div>
         <div class="tags">
-          <span class="tag highlight">Oracle OIM</span>
-          <span class="tag highlight">Oracle OAM</span>
-          <span class="tag highlight">Oracle OID</span>
-          <span class="tag highlight">OARM</span>
-          <span class="tag highlight">Oracle OHS</span>
+          <span class="tag">Oracle OIM</span>
+          <span class="tag">Oracle OAM</span>
+          <span class="tag">Oracle OID</span>
+          <span class="tag">OARM</span>
+          <span class="tag">Oracle OHS</span>
           <span class="tag">SailPoint IdentityIQ</span>
           <span class="tag">SAML 2.0</span>
           <span class="tag">OAuth 2.0</span>
@@ -788,15 +881,14 @@
           <span class="tag">Access Governance</span>
           <span class="tag">WebLogic Server</span>
           <span class="tag">MFA</span>
-          <span class="tag">Federation</span>
         </div>
       </div>
 
       <div class="skill-group">
         <div class="skill-group-name">Programming Languages</div>
         <div class="tags">
-          <span class="tag highlight">Java</span>
-          <span class="tag highlight">C++</span>
+          <span class="tag">Java</span>
+          <span class="tag">C++</span>
           <span class="tag">SQL</span>
           <span class="tag">Python</span>
           <span class="tag">Bash / Shell</span>
@@ -812,8 +904,7 @@
           <span class="tag">DynamoDB</span>
           <span class="tag">Oracle DB</span>
           <span class="tag">Oracle Internet Directory (OID)</span>
-          <span class="tag">LDAP Queries</span>
-          <span class="tag">SQL Audit Queries</span>
+          <span class="tag">SQL</span>
         </div>
       </div>
 
@@ -823,7 +914,7 @@
           <span class="tag">AWS Lambda</span>
           <span class="tag">AWS API Gateway</span>
           <span class="tag">DynamoDB</span>
-          <span class="tag">Linux (RHEL/OEL)</span>
+          <span class="tag">Linux</span>
           <span class="tag">REST APIs</span>
           <span class="tag">Git</span>
           <span class="tag">DMZ Architecture</span>
@@ -834,7 +925,6 @@
         <div class="skill-group-name">ITSM & Monitoring</div>
         <div class="tags">
           <span class="tag">ServiceNow</span>
-          <span class="tag">JIRA</span>
           <span class="tag">AppDynamics</span>
           <span class="tag">Log Analysis</span>
           <span class="tag">Root Cause Analysis</span>
@@ -869,7 +959,7 @@
         <div class="exp-dot"><i class="fas fa-shield-alt"></i></div>
         <div class="exp-content">
           <div class="exp-header">
-            <div class="exp-role">Programming Analyst — IAM Engineer</div>
+            <div class="exp-role">Programming Analyst — Cybersecurity &amp; IAM Engineer</div>
             <div class="exp-period">Sep 2025 – Present</div>
           </div>
           <div class="exp-company"><i class="fas fa-building" style="margin-right:0.4rem;font-size:0.8rem;"></i>Cognizant Technology Solutions · Mumbai</div>
@@ -962,8 +1052,8 @@
           <div class="edu-icon"><i class="fas fa-university"></i></div>
           <div>
             <div class="edu-degree">Bachelor of Technology (Information Technology)</div>
-            <div class="edu-school">ABES Engineering College, Ghaziabad</div>
-            <div class="edu-meta">2020 – 2024 &nbsp;·&nbsp; 78.8%</div>
+            <div class="edu-school">ABES Engineering College, Ghaziabad(AKTU)</div>
+            <div class="edu-meta">2020 – 24 &nbsp;·&nbsp; 78.8 %</div>
           </div>
         </div>
         <div class="edu-card">
@@ -971,15 +1061,15 @@
           <div>
             <div class="edu-degree">Senior Secondary (PCM) — CBSE</div>
             <div class="edu-school">Bethel Academy, Prayagraj</div>
-            <div class="edu-meta">2018 – 2020 &nbsp;·&nbsp; 77.4%</div>
+            <div class="edu-meta">2020 &nbsp;·&nbsp; 77.4 %</div>
           </div>
         </div>
         <div class="edu-card">
           <div class="edu-icon"><i class="fas fa-book"></i></div>
           <div>
             <div class="edu-degree">High School — CBSE</div>
-            <div class="edu-school">Central Academy Senior Secondary School</div>
-            <div class="edu-meta">2016 – 2018 &nbsp;·&nbsp; 86.2%</div>
+            <div class="edu-school">Central Academy Senior Secondary School, Prayagraj</div>
+            <div class="edu-meta">2018 &nbsp;·&nbsp; 86.2 %</div>
           </div>
         </div>
       </div>
@@ -1086,11 +1176,7 @@
           <div class="profile-name">Coding Ninjas</div>
           <div class="profile-handle">Ambuj Tripathi</div>
         </a>
-        <a href="https://ambujtripathi988.github.io/Portfolio/" target="_blank" class="profile-card">
-          <div class="profile-icon" style="background:var(--accent);color:#fff;"><i class="fas fa-globe"></i></div>
-          <div class="profile-name">Portfolio</div>
-          <div class="profile-handle">GitHub Pages</div>
-        </a>
+
       </div>
     </section>
 
@@ -1116,7 +1202,7 @@
         </div>
         <div class="achievement-item">
           <div class="achievement-icon"><i class="fas fa-graduation-cap"></i></div>
-          <div class="achievement-text">Graduated with <strong>78.8% in B.Tech IT</strong> from ABES Engineering College while simultaneously building hands-on IAM and AWS expertise.</div>
+          <div class="achievement-text">Graduated with <strong>78.8 % in B.Tech IT</strong> from ABES Engineering College while simultaneously building hands-on IAM and AWS expertise.</div>
         </div>
       </div>
     </section>
@@ -1149,35 +1235,19 @@
         <div class="section-line"></div>
       </div>
       <h2 class="section-title">Get In Touch</h2>
-      <div class="contact-grid">
-        <a href="mailto:acc.ambujtripathi@gmail.com" class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <div>
-            <div class="contact-label">Email</div>
-            <div class="contact-val">acc.ambujtripathi@gmail.com</div>
-          </div>
-        </a>
-        <a href="tel:+919889688939" class="contact-item">
-          <i class="fas fa-phone"></i>
-          <div>
-            <div class="contact-label">Phone</div>
-            <div class="contact-val">+91 98896 88939</div>
-          </div>
-        </a>
-        <a href="https://linkedin.com/in/ambujtripathise" target="_blank" class="contact-item">
-          <i class="fab fa-linkedin"></i>
-          <div>
-            <div class="contact-label">LinkedIn</div>
-            <div class="contact-val">ambujtripathise</div>
-          </div>
-        </a>
-        <a href="https://github.com/ambujtripathi988" target="_blank" class="contact-item">
-          <i class="fab fa-github"></i>
-          <div>
-            <div class="contact-label">GitHub</div>
-            <div class="contact-val">ambujtripathi988</div>
-          </div>
-        </a>
+      <div class="contact-simple">
+        <p class="contact-intro">Open to new opportunities in IAM, Identity Security, and enterprise access management. Feel free to reach out.</p>
+        <div class="contact-links">
+          <a href="mailto:acc.ambujtripathi@gmail.com" class="contact-link-pill">
+            <i class="fas fa-envelope"></i> acc.ambujtripathi@gmail.com
+          </a>
+          <a href="tel:+919889688939" class="contact-link-pill">
+            <i class="fas fa-phone"></i> +91 98896 88939
+          </a>
+          <a href="https://linkedin.com/in/ambujtripathise" target="_blank" class="contact-link-pill">
+            <i class="fab fa-linkedin"></i> linkedin.com/in/ambujtripathise
+          </a>
+        </div>
       </div>
     </section>
 
@@ -1222,7 +1292,7 @@
   })();
 
   // ===== Typed Effect =====
-  const phrases = ['IAM Engineer', 'Oracle OIM Specialist', 'SSO & OAuth Expert', 'Identity Lifecycle Mgmt', 'L2 Support Engineer'];
+  const phrases = ['Cybersecurity — IAM Engineer', 'Oracle OIM Specialist', 'SSO & OAuth Expert', 'Identity Lifecycle Mgmt', 'L2 Support Engineer'];
   let pi = 0, ci = 0, del = false;
   const el = document.getElementById('typed');
   function typeLoop() {
@@ -1253,5 +1323,9 @@
   }
   window.addEventListener('scroll', updateNav, { passive: true });
 </script>
+<footer class="site-footer">
+  <p>© 2026 |  <strong>Ambuj Tripathi</strong> 
+  </p>
+</footer>
 </body>
 </html>
